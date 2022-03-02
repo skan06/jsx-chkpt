@@ -1,5 +1,8 @@
 
 import './style.css';
+import imageInSrc from './imageInsrc.jpg';
+import vidSrc from './vidSrc.mp4';
+
 
 function App() {
   return (
@@ -10,7 +13,7 @@ function App() {
 
 <br/>
 
-<img src={"/imageInSrc.jpg"} alt="imageInsrc"/>
+<img className='imgsrc' src={imageInSrc} alt="imageInsrc"/>
 
 <br/>
 
@@ -20,9 +23,16 @@ function App() {
 
 <video width="320" height="240" controls>
 
-<source src="myVideo.mp4" type="video/mp4" />
+<source src={vidSrc} type="video/mp4" />
 
 </video>
+
+<video width="320" height="240" controls>
+
+<source src="/vidPb.mp4" type="video/mp4" />
+
+</video>
+
     </div>
   );
 }
